@@ -1,0 +1,24 @@
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\bin\Debug\Sadettin Dursun-20200108033-Final.exe.config
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\bin\Debug\Sadettin Dursun-20200108033-Final.exe
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\bin\Debug\Sadettin Dursun-20200108033-Final.pdb
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin Dursun-20200108033-Final.csproj.AssemblyReference.cache
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin Dursun-20200108033-Final.csproj.SuggestedBindingRedirects.cache
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin_Dursun_20200108033_Final.Form1.resources
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin_Dursun_20200108033_Final.Properties.Resources.resources
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin Dursun-20200108033-Final.csproj.GenerateResource.cache
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin Dursun-20200108033-Final.csproj.CoreCompileInputs.cache
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin Dursun-20200108033-Final.exe
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin Dursun-20200108033-Final.pdb
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin_Dursun_20200108033_Final.Ders_Listele.resources
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin_Dursun_20200108033_Final.Personel_Listele.resources
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin_Dursun_20200108033_Final.Öğrenci_Listele.resources
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin_Dursun_20200108033_Final.Öğrenci_Ders_Listele.resources
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin_Dursun_20200108033_Final.Öğrenci_Ders.resources
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin_Dursun_20200108033_Final.Öğrenci.resources
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin_Dursun_20200108033_Final.Personel_İşlemleri.resources
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\bin\Debug\EntityFramework.dll
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\bin\Debug\EntityFramework.xml
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin Dursun-20200108033-Final.csproj.CopyComplete
+C:\Users\sadet\source\repos\Sadettin Dursun-20200108033-Final\Sadettin Dursun-20200108033-Final\obj\Debug\Sadettin_Dursun_20200108033_Final.Ders_İşlemleri.resources

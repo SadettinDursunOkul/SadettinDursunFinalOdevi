@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OkulYonetimModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Ders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Kredisi" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="OkulYonetimId" Type="Int32" />
+    <NavigationProperty Name="OkulYonetim" Relationship="Self.FK_Ders_OkulYonetim" FromRole="Ders" ToRole="OkulYonetim" />
+    <NavigationProperty Name="OgrenciDers" Relationship="Self.FK_OgrenciDers_Ders" FromRole="Ders" ToRole="OgrenciDers" />
+  </EntityType>
+  <EntityType Name="Ogrenci">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdSoyad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="KayitTarih" Type="DateTime" Precision="7" />
+    <Property Name="OgrenciNo" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="DTarih" Type="DateTime" Precision="0" />
+    <Property Name="Bolum" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OgrenciDers" Relationship="Self.FK_OgrenciDers_Ogrenci" FromRole="Ogrenci" ToRole="OgrenciDers" />
+  </EntityType>
+  <EntityType Name="OgrenciDers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DersId" Type="Int32" />
+    <Property Name="OgrenciId" Type="Int32" />
+    <NavigationProperty Name="Ders" Relationship="Self.FK_OgrenciDers_Ders" FromRole="OgrenciDers" ToRole="Ders" />
+    <NavigationProperty Name="Ogrenci" Relationship="Self.FK_OgrenciDers_Ogrenci" FromRole="OgrenciDers" ToRole="Ogrenci" />
+  </EntityType>
+  <EntityType Name="OkulYonetim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdSoyad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Gorevi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="YonetimTip" Type="Int32" />
+    <NavigationProperty Name="Ders" Relationship="Self.FK_Ders_OkulYonetim" FromRole="OkulYonetim" ToRole="Ders" />
+  </EntityType>
+  <Association Name="FK_Ders_OkulYonetim">
+    <End Role="OkulYonetim" Type="Self.OkulYonetim" Multiplicity="0..1" />
+    <End Role="Ders" Type="Self.Ders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OkulYonetim">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ders">
+        <PropertyRef Name="OkulYonetimId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgrenciDers_Ders">
+    <End Role="Ders" Type="Self.Ders" Multiplicity="0..1" />
+    <End Role="OgrenciDers" Type="OkulYonetimModel.OgrenciDers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OgrenciDers">
+        <PropertyRef Name="DersId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OgrenciDers_Ogrenci">
+    <End Role="Ogrenci" Type="Self.Ogrenci" Multiplicity="0..1" />
+    <End Role="OgrenciDers" Type="OkulYonetimModel.OgrenciDers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ogrenci">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OgrenciDers">
+        <PropertyRef Name="OgrenciId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="OkulYonetimEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Ders" EntityType="Self.Ders" />
+    <EntitySet Name="Ogrenci" EntityType="Self.Ogrenci" />
+    <EntitySet Name="OgrenciDers" EntityType="OkulYonetimModel.OgrenciDers" />
+    <EntitySet Name="OkulYonetim" EntityType="Self.OkulYonetim" />
+    <AssociationSet Name="FK_Ders_OkulYonetim" Association="Self.FK_Ders_OkulYonetim">
+      <End Role="OkulYonetim" EntitySet="OkulYonetim" />
+      <End Role="Ders" EntitySet="Ders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgrenciDers_Ders" Association="Self.FK_OgrenciDers_Ders">
+      <End Role="Ders" EntitySet="Ders" />
+      <End Role="OgrenciDers" EntitySet="OgrenciDers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OgrenciDers_Ogrenci" Association="Self.FK_OgrenciDers_Ogrenci">
+      <End Role="Ogrenci" EntitySet="Ogrenci" />
+      <End Role="OgrenciDers" EntitySet="OgrenciDers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
